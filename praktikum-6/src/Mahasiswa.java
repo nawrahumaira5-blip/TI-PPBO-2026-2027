@@ -1,7 +1,7 @@
 public class Mahasiswa {
     String nama;
     String nim;
-    Double ipk;
+    double ipk;
 
     // Constructor default (tanpa parameter
     public Mahasiswa() {
@@ -11,8 +11,12 @@ public class Mahasiswa {
     }
 
     public Mahasiswa(String namaAwal, String nimAwal, double ipkAwal) {
-        nama = namaAwal;
-        nim = nimAwal;
-        ipk = ipkAwal;
+        this.nama = namaAwal;
+        this.nim = nimAwal;
+        this.ipk = ipkAwal;
+
+
+        }
+
     }
-}
+
