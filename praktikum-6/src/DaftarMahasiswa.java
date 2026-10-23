@@ -3,7 +3,7 @@ public class DaftarMahasiswa {
         Mahasiswa[] daftar = new Mahasiswa[3];
 
         daftar[0] = new Mahasiswa("Budi", "111", 3.2);
-        daftar[1] = new Mahasiswa("Siti", "222", 3.8);
+        daftar[1] = new Mahasiswa("Nawra", "222", 3.8);
         daftar[2] = new Mahasiswa("Andi", "333", 3.6);
 
         for (Mahasiswa m : daftar) {
