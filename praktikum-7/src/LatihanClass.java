@@ -1,12 +1,7 @@
-public class Mahasiswa {
-    private String nama;
-    private String nim;
-    private double ipk;
-
-
-    public Mahasiswa(String nama, String nim, double ipk) {
-        this.nama = nama;
-        this.nim = nim;
-        this.ipk = ipk;
+public class LatihanClass {
+    public static void main(String[] args) {
+        Mahasiswa m1 = new Mahasiswa ( "Budi" , "111" , 3.5 );
+        System . out . println ( "Nama: " + m1. getNama ());
+        System . out . println ( "IPK: " + m1. getIpk ());
     }
 }
