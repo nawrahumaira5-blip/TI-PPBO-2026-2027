@@ -3,21 +3,21 @@ public class Pegawai {
     protected String nip;
     protected double gajiPokok;
 
+    public Pegawai(String nama, String nip, double gajiPokok) {
+        this.nama = nama;
+        this.nip = nip;
 
-public Pegawai ( String nama, String nip , double gajiPokok ) {
-    this.nama = nama;
-    this.nip = nip;
-    this.gajiPokok = gajiPokok;
+        if (gajiPokok < 0) {
+            this.gajiPokok = 0;
+            System.out.println("Peringatan: Gaji tidak boleh negatif!");
+        } else {
+            this.gajiPokok = gajiPokok;
+        }
+    }
 
+    public void tampilkanData() {
+        System.out.println("Nama: " + nama);
+        System.out.println("NIP: " + nip);
+        System.out.printf("Gaji Pokok: %.0f%n", gajiPokok);
+    }
 }
-
-public void tampilkanData () {
-    System.out.println("Nama: " + nama);
-    System.out.println("NIP : " + nip);
-    System.out.println("Gaji Pokok: " + gajiPokok);
-       }
-   }
-
-
-
-
