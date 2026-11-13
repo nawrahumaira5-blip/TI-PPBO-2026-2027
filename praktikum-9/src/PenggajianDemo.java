@@ -1,16 +1,19 @@
 public class PenggajianDemo {
-    public static void main ( String [] args ) {
-        Pegawai [] daftarPegawai = {
-                new Manager ( "Budi" , "M001" , 3000000 , 1000000 ),
-                new Staff ( "Siti" , "S001" , 2000000 , 500000 ),
-                new Staff ( "Andi" , "S002" , 2000000 , 300000 ),
-        };
-        double totalGaji = 0;
-        for ( Pegawai pg : daftarPegawai ) {
-            double gaji = pg . hitungGaji (); // versi sesuai jenis
-            System . out . println ( pg . nama + ": " + gaji );
-            totalGaji += gaji ;
-        }
-        System . out . println ( "Total gaji: " + totalGaji );
+    public static void main(String[] args) {
+
+        System.out.println("=== UJI TUGAS BANGUN DATAR ===");
+
+        // Membuat objek dengan parameter baru (String namaBangun, ...)
+        BangunDatar lingkaran = new Lingkaran("Lingkaran", 7.0);
+        BangunDatar persegi = new Persegi("Persegi", 5.0);
+        BangunDatar persegiPanjang = new PersegiPanjang("Persegi Panjang", 8.0, 4.0);
+
+        // Memanggil method tampilkanInfo() dari superclass
+        lingkaran.tampilkanInfo();
+        persegi.tampilkanInfo();
+        persegiPanjang.tampilkanInfo();
+
+        // Kode untuk urusan Gaji (Manager/Direktur) biarkan saja di bawahnya
+        // jika Anda masih ingin menampilkannya, atau hapus jika fokus ke tugas ini.
     }
 }
